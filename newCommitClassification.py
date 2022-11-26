@@ -70,6 +70,5 @@ ynew = model2.predict(Xnew)
 if ynew == 0.0:
     print('sfs')
 else:
-    print('sfs')
+    result=5/0
 
- return -1
