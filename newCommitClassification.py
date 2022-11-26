@@ -68,6 +68,7 @@ with open("decistion_tree.log", "w") as fout:
 ynew = model2.predict(Xnew)
 print(Xnew)
 if ynew == 0.0:
-    return -1
+    print("commit buono")
 else:
-    print("commit con possibile bug")
+    return -1
+
