@@ -27,7 +27,7 @@ jobs:
       run: 
         pip install -r requirements.txt
     - name: commit classification
-      run: python3 newCommitClassification.py https://github.com/R-luigi99/Prova.git 284e98744ebb926b3230282866c344aec8ad76ab > output.log
+      run: python3 newCommitClassification.py > output.log
       #per mettere output
     - name: Upload output file
       uses: actions/upload-artifact@v2 #task predefinito
