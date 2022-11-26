@@ -66,9 +66,9 @@ with open("decistion_tree.log", "w") as fout:
     fout.write(text_representation)
 
 ynew = model2.predict(Xnew)
-print(Xnew)
+
 if ynew == 0.0:
-    print("commit buono")
+    return 0
 else:
     return -1
 
