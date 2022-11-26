@@ -4,12 +4,9 @@ import pydriller
 import sys
 
 extensions=[".java"]
-#id=sys.argv[1]
-#gitRepo=sys.argv[2]
+id=sys.argv[1]
+gitRepo=sys.argv[2]
 
-
-id='284e98744ebb926b3230282866c344aec8ad76ab'
-gitRepo='https://github.com/R-luigi99/Prova.git'
 
 from sklearn import tree
 
@@ -68,9 +65,7 @@ with open("decistion_tree.log", "w") as fout:
 ynew = model2.predict(Xnew)
 
 if ynew == 0.0:
-    result=5/0
-
-    print('sfs')
+    print('commit buono')
 else:
     result=5/0
 
