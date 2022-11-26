@@ -4,8 +4,12 @@ import pydriller
 import sys
 
 extensions=[".java"]
-id=sys.argv[1]
-gitRepo=sys.argv[2]
+#id=sys.argv[1]
+#gitRepo=sys.argv[2]
+
+
+id='284e98744ebb926b3230282866c344aec8ad76ab'
+gitRepo='https://github.com/R-luigi99/Prova.git'
 
 from sklearn import tree
 
