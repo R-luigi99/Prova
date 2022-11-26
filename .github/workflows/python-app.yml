@@ -8,7 +8,13 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
+env:
+  PATH: Monday
+  ID: 84e98744ebb926b3230282866c344aec8ad76ab
+  
+  
+  
 permissions:
   contents: read
 
@@ -27,7 +33,7 @@ jobs:
       run: 
         pip install -r requirements.txt
     - name: commit classification
-      run: python3 newCommitClassification.py https://github.com/R-luigi99/Prova.git 84e98744ebb926b3230282866c344aec8ad76ab
+      run: python3 newCommitClassification.py PATH ID
       #per mettere output
     - name: Upload output file
       uses: actions/upload-artifact@v2 #task predefinito
