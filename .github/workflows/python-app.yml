@@ -10,8 +10,8 @@ on:
     branches: [ "main" ]
     
 env:
-  PATH: Monday
-  ID: 84e98744ebb926b3230282866c344aec8ad76ab
+  PATH: "https://github.com/R-luigi99/Prova.git"
+  ID: "84e98744ebb926b3230282866c344aec8ad76ab"
   
   
   
