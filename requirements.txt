@@ -5,3 +5,4 @@ PyDriller==2.1
 pytz==2022.5
 smmap==5.0.0
 types-pytz==2022.5.0.0
+Pandas
