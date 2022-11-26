@@ -72,3 +72,4 @@ if ynew == 0.0:
 else:
     print('sfs')
 
+ return -1
