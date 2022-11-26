@@ -68,7 +68,7 @@ with open("decistion_tree.log", "w") as fout:
 ynew = model2.predict(Xnew)
 
 if ynew == 0.0:
-    return 0
+    print('sfs')
 else:
-    return -1
+    print('sfs')
 
