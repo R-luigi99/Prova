@@ -9,9 +9,7 @@ on:
   pull_request:
     branches: [ "main" ]
     
-env:
-  PATH: "https://github.com/R-luigi99/Prova.git"
-  ID: "84e98744ebb926b3230282866c344aec8ad76ab"
+
   
   
   
