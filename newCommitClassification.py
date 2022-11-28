@@ -3,7 +3,7 @@ from sklearn.tree import DecisionTreeClassifier
 import pydriller
 import sys
 
-extensions=[".java"]
+
 id=sys.argv[1]
 gitRepo=sys.argv[2]
 
