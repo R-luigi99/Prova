@@ -28,10 +28,9 @@ jobs:
       run: 
         pip install -r requirements.txt
     - name: get id
-      run: |
-        echo "action_state=bluew" >> $GITHUB_ENV  
+      run: echo "GITHUB_SHA_SHORT=$(git log -n1 --format="%H")" >> $GITHUB_ENV
 
     - name: commit classification
-      run: python3 newCommitClassification.py "id_last_commit" https://github.com/R-luigi99/Prova.git
+      run: python3 newCommitClassification.py $GITHUB_SHA_SHORT https://github.com/R-luigi99/Prova.git
       #per mettere output
    
