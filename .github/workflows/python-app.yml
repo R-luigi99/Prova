@@ -29,7 +29,7 @@ jobs:
         pip install -r requirements.txt
     - name: get id
       run: |
-        echo "action_state=git log -n1 --format="%H"" >> $GITHUB_ENV  
+        echo "action_state=bluew" >> $GITHUB_ENV  
 
     - name: commit classification
       run: python3 newCommitClassification.py "id_last_commit" https://github.com/R-luigi99/Prova.git
