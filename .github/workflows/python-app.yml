@@ -34,6 +34,6 @@ jobs:
       run: echo "GITHUB_SHA_SHORT=$(git log -n1 --format="%H")" >> $GITHUB_ENV
 
     - name: commit classification
-      run: python3 newCommitClassification.py $GITHUB_SHA_SHORT https://github.com/R-luigi99/Prova.git
+      run: python3 newCommitClassification.py $GITHUB_SHA_SHORT https://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@github.com/R-luigi99/Prova.git
       #per mettere output
    
