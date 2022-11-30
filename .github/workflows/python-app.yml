@@ -32,8 +32,14 @@ jobs:
         pip install -r requirements.txt
     - name: get id
       run: echo "GITHUB_SHA_SHORT=$(git log -n1 --format="%H")" >> $GITHUB_ENV
+      
 
-    - name: commit classification
-      run: python3 newCommitClassification.py $GITHUB_SHA_SHORT https:/@github.com/R-luigi99/Prova.git
-      #per mettere output
+    - name: output
+      run: python3 classificatori.py > output.log
+
+    - name: Upload output file
+      uses: actions/upload-artifact@v2 
+      with:
+        name: output-log-file
+        path: output.log
    
