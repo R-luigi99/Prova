@@ -35,11 +35,11 @@ jobs:
       
 
     - name: output
-      run: python3 classificatori.py >> output.log
+      run: python3 classificatori.py > output.log
 
     - name: Upload output file
       uses: actions/upload-artifact@v2 
       with:
         name: output-log-file
-        path: output.log
+        path: ./JustInTime/output.log
    
