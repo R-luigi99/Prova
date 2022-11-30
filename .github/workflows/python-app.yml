@@ -41,5 +41,5 @@ jobs:
       uses: actions/upload-artifact@v2 
       with:
         name: output-log-file
-        path: ./JustInTime/output.log
+        path: ./nuova/output.log
    
