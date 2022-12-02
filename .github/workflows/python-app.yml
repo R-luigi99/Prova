@@ -40,6 +40,7 @@ jobs:
     - name: Commit changes
       uses: EndBug/add-and-commit@v9
       with:
+        github_token: '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'
         author_name: Your Name
         author_email: ricciuto99@gmail.com
         message: 'Your commit message'
