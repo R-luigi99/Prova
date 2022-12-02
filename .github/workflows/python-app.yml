@@ -37,12 +37,14 @@ jobs:
     - name: output
       run: python3 classificatori.py > testo.txt
         
-    - name: Commit changes
-      uses: EndBug/add-and-commit@v9
-      with:
-        github_token: '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'
-        author_name: Your Name
-        author_email: ricciuto99@gmail.com
-        message: 'Your commit message'
-        add: '*.txt'
+        
+    - name: Commit report
+      run: |
+          git config --global user.name 'Luigi'
+          git config --global user.email 'R-luigi99@users.noreply.github.com'
+          git remote set-url origin https://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@github.com/R-luigi99/Prova.git
+          git checkout main
+          git add *.txt
+          git commit -m "prova"
+          git push
    
