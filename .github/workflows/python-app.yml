@@ -42,7 +42,7 @@ jobs:
       run: |
           git config --global user.name 'Luigi'
           git config --global user.email 'R-luigi99@users.noreply.github.com'
-          git remote set-url origin https://R-luigi99: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@github.com/R-luigi99/Prova.git
+          git remote set-url origin https://@github.com/R-luigi99/Prova.git
           git add *.txt
           git commit -m "prova"
           git push
