@@ -35,11 +35,13 @@ jobs:
       
 
     - name: output
-      run: python3 classificatori.py > output.log
-
-    - name: Upload output file
-      uses: actions/upload-artifact@v2 
+      run: python3 classificatori.py > testo.txt
+        
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v9
       with:
-        name: output-log-file
-        path: ./nuova/output.log
+        author_name: Your Name
+        author_email: ricciuto99@gmail.com
+        message: 'Your commit message'
+        add: '*.txt'
    
