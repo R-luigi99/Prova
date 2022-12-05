@@ -42,8 +42,8 @@ jobs:
       run: |
           git config --global user.name 'Luigi'
           git config --global user.email 'R-luigi99@users.noreply.github.com'
-          git clone https://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@github.com/R-luigi99/Prova.git
-          git add *.txt
+          git clone https://@github.com/R-luigi99/Prova.git
+          git add testo.txt
           git commit -m "prova"
           git push
    
