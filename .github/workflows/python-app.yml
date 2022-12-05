@@ -24,7 +24,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
       with:
-        token: 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
+        token: ${{ secrets.TOKEN }}
     - name: Set up Python 3.10
       uses: actions/setup-python@v3
       with:
