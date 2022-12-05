@@ -1,1 +1,108 @@
-ciao
+
+RandomForrest 
+
+              precision    recall  f1-score   support
+
+         0.0       0.96      0.81      0.88       884
+         1.0       0.24      0.62      0.34        86
+
+    accuracy                           0.79       970
+   macro avg       0.60      0.71      0.61       970
+weighted avg       0.89      0.79      0.83       970
+
+RandomForrest Confusion Matrix: 
+ [[714  33]
+ [170  53]]
+
+Accuracy score:  0.791  Precision 0.712  Recall 0.597  FScore 0.609
+
+ RandomForrest K cross validation: 
+Score Accuracy:  [0.83505155 0.78350515 0.81443299 0.79381443 0.78350515 0.75257732
+ 0.78350515 0.77319588 0.81443299 0.7628866 ]
+Mean Accuracy:  0.79
+Score Precision:  [0.85323034 0.69673913 0.78511236 0.70100309 0.68118687 0.63361463
+ 0.68118687 0.69130435 0.77642706 0.65      ]
+Mean Precision:  0.715
+Score Recall:  [0.65242424 0.55484848 0.6230303  0.65787879 0.5869697  0.61515152
+ 0.5869697  0.55170388 0.65364277 0.58989424]
+Mean Recall:  0.607
+Score FScore:  [0.68455285 0.54823686 0.64512195 0.67273954 0.59687314 0.62207792
+ 0.59687314 0.5408778  0.67904412 0.59910153]
+Mean FScore:  0.619
+
+
+
+
+ExtraTrees 
+
+              precision    recall  f1-score   support
+
+         0.0       0.94      0.81      0.87       874
+         1.0       0.24      0.56      0.34        96
+
+    accuracy                           0.78       970
+   macro avg       0.59      0.68      0.60       970
+weighted avg       0.87      0.78      0.82       970
+
+ExtraTrees Confusion Matrix: 
+ [[705  42]
+ [169  54]]
+
+Accuracy score:  0.782  Precision 0.685  Recall 0.593  FScore 0.604
+
+ ExtraTrees K cross validation: 
+Score Accuracy:  [0.81443299 0.77319588 0.78350515 0.79381443 0.77319588 0.73195876
+ 0.80412371 0.78350515 0.80412371 0.7628866 ]
+Mean Accuracy:  0.782
+Score Precision:  [0.78511236 0.6488764  0.68118687 0.70100309 0.65229885 0.57616179
+ 0.72435897 0.7113764  0.73709122 0.64655172]
+Mean Precision:  0.686
+Score Recall:  [0.6230303  0.56424242 0.5869697  0.65787879 0.58030303 0.55363636
+ 0.64848485 0.58842538 0.66186839 0.57491187]
+Mean Recall:  0.604
+Score FScore:  [0.64512195 0.56626016 0.59687314 0.67273954 0.58834877 0.55661041
+ 0.668823   0.59687314 0.68273369 0.58008658]
+Mean FScore:  0.615
+
+
+
+
+DecisionTree 
+
+              precision    recall  f1-score   support
+
+         0.0       0.70      0.83      0.76       630
+         1.0       0.52      0.34      0.41       340
+
+    accuracy                           0.66       970
+   macro avg       0.61      0.58      0.58       970
+weighted avg       0.63      0.66      0.64       970
+
+DecisionTree Confusion Matrix: 
+ [[522 225]
+ [108 115]]
+
+Accuracy score:  0.657  Precision 0.583  Recall 0.607  FScore 0.583
+
+ DecisionTree K cross validation: 
+Score Accuracy:  [0.7628866  0.74226804 0.68041237 0.6185567  0.73195876 0.69072165
+ 0.79381443 0.6185567  0.71134021 0.60824742]
+Mean Accuracy:  0.696
+Score Precision:  [0.61787879 0.6287594  0.5461039  0.60544218 0.58873457 0.63804639
+ 0.71992481 0.54995265 0.64275956 0.52139303]
+Mean Precision:  0.606
+Score Recall:  [0.63787879 0.60181818 0.51363636 0.65030303 0.57636364 0.68090909
+ 0.71272727 0.5987074  0.69095182 0.52526439]
+Mean Recall:  0.619
+Score FScore:  [0.63533835 0.62652087 0.53688588 0.58388406 0.5745614  0.62936029
+ 0.71615586 0.55730223 0.66218905 0.51973772]
+Mean FScore:  0.604
+
+
+
+      Classifier  ...  K-Cross Validation best result FScore
+0  RandomForrest  ...                                  0.685
+1     ExtraTrees  ...                                  0.683
+2   DecisionTree  ...                                  0.716
+
+[3 rows x 9 columns]
