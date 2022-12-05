@@ -1,0 +1,1 @@
+\b(fix|fixed|fixing|fixes|bugs?|defects?)\b
