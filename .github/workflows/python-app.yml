@@ -46,5 +46,5 @@ jobs:
           git config --global user.name "Your Name"
           git add testo.txt
           git commit -m "prova"
-          #git push
+          git push
    
