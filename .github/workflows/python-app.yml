@@ -42,6 +42,8 @@ jobs:
         
     - name: Commit report
       run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
           git add testo.txt
           git commit -m "prova"
           #git push
