@@ -34,9 +34,12 @@ jobs:
       
 
     - name: output
-      run: python3 classificatori.py > testo.txt
-      
-      #
+      run: | 
+           python3 runSZZ.py https://github.com/apache/dubbo.git dubbo 
+           python3 commits_features.py https://github.com/apache/dubbo.git
+           python3 commit_selector.py
+           python3 CreateCsv.py
+           python3 CreateModel.py
     
         
         
@@ -44,7 +47,7 @@ jobs:
       run: |
           git config --global user.email "you@example.com"
           git config --global user.name "Your Name"
-          git add testo.txt
+          git add prova.sav
           git commit -m "prova"
           git push
    
