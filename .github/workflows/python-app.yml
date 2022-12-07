@@ -35,7 +35,7 @@ jobs:
 
     - name: output
       run: | 
-           python3 runSZZ.py https://github.com/HouariZegai/Calculator.git Calculator.git java
+           python3 runSZZ.py /Calculator.git Calculator.git java
            python3 commits_features.py https://github.com/HouariZegai/Calculator.git
    #        gzip -d Calculator.git-annotations.json.gz
    #        gzip -d Calculator.git-bugs.json.gz
