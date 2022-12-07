@@ -28,11 +28,6 @@ jobs:
       with:
         python-version: "3.10"
        
-    - name: Install dependencies
-      run: 
-        pip install -r requirements.txt
-    - name: get id
-      run: echo "GITHUB_SHA_SHORT=$(git log -n1 --format="%H")" >> $GITHUB_ENV
       
 
     - name: output
