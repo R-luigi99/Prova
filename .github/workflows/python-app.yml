@@ -2,11 +2,7 @@
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
 name: Python application
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [workflow_dispatch]
   
 permissions:
   contents: read
@@ -28,7 +24,7 @@ jobs:
       uses: actions/checkout@v2
       with:
        repository: apache/dubbo
-       path: './bar'
+       path: './bar/dubbo'
       
       
     - name: Set up Python 3.10
@@ -42,25 +38,22 @@ jobs:
 
     - name: output
       run: | 
-     
-              cd ..
-              cd bar
-              ls
-   #          python3 runSZZ.py /Calculator.git Calculator.git java
- #            python3 commits_features.py https://github.com/HouariZegai/Calculator.git
-   #        gzip -d Calculator.git-annotations.json.gz
-   #        gzip -d Calculator.git-bugs.json.gz
-   #    python3 commit_selector.py
-        #   python3 CreateCsv.py
-  #         python3 CreateModel.py
+ 
+           python3 runSZZ.py /bar/dubbo java
+           python3 commits_features.py https://github.com/apache/dubbo.git
+           gzip -d dubbo-annotations.json.gz
+           gzip -d dubbo-bugs.json.gz
+           python3 commit_selector.py
+           python3 CreateCsv.py
+           python3 CreateModel.py
     
         
         
- #   - name: Commit report
-  #    run: |
-     #     git config --global user.email "you@example.com"
-     #     git config --global user.name "Your Name"
-     #     git add .
-     #     git commit -m "prova"
-       #   git push 
+    - name: Commit report
+      run: |
+          git config --global user.email "you@example.com"
+          git config --global user.name "Your Name"
+          git add .
+          git commit -m "prova"
+          git push 
    
