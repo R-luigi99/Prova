@@ -25,6 +25,7 @@ cmd2=pythonCommand+" SZZ.py "+bugFileName+" "+path+" "+language+" >"+annotationF
 print(cmd2,file=sys.stderr)
 os.system(cmd2)
 
-os.system(bugFileName)
-os.system(annotationFileName)
+os.system("gzip -f "+bugFileName)
+os.system("gzip -f "+annotationFileName)
+
 
