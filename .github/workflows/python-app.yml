@@ -37,9 +37,9 @@ jobs:
       run: | 
            python3 runSZZ.py https://github.com/HouariZegai/Calculator.git Caluculator.git java
            python3 commits_features.py https://github.com/HouariZegai/Calculator.git
- #          gunzip Calculator.git-annotations.json.gz
-        #   gunzip file.gzCalculator.git-bugs.json.gz
-        #  python3 commit_selector.py
+           gzip -d Calculator.git-annotations.json.gz
+           gzip -d file.gzCalculator.git-bugs.json.gz
+ #         python3 commit_selector.py
            #python3 CreateCsv.py
            #python3 CreateModel.py
     
