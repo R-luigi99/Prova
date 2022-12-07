@@ -1,6 +1,6 @@
 import json
 
-with open('dubbo-annotations.json', 'r') as f:
+with open('dubbo.git-annotations.json', 'r') as f:
   data = json.load(f)
 cms={}
 for key in data.keys():
