@@ -37,6 +37,9 @@ jobs:
 
     - name: output
       run: | 
+            
+              git clone https://github.com/apache/dubbo.git
+              cd..
               ls
    #          python3 runSZZ.py /Calculator.git Calculator.git java
  #            python3 commits_features.py https://github.com/HouariZegai/Calculator.git
@@ -48,11 +51,11 @@ jobs:
     
         
         
-    - name: Commit report
-      run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git add .
-          git commit -m "prova"
-          git push
+ #   - name: Commit report
+  #    run: |
+     #     git config --global user.email "you@example.com"
+     #     git config --global user.name "Your Name"
+     #     git add .
+     #     git commit -m "prova"
+       #   git push 
    
