@@ -44,6 +44,7 @@ jobs:
       run: | 
      
               cd ..
+              cd bar
               ls
    #          python3 runSZZ.py /Calculator.git Calculator.git java
  #            python3 commits_features.py https://github.com/HouariZegai/Calculator.git
