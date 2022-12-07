@@ -38,7 +38,8 @@ jobs:
 
     - name: output
       run: | 
- 
+           cd bar/dubbo
+           pwd
            python3 runSZZ.py /bar/dubbo java
            python3 commits_features.py https://github.com/apache/dubbo.git
            gzip -d dubbo-annotations.json.gz
