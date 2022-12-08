@@ -40,13 +40,7 @@ jobs:
 
     - name: output
       run: | 
-        
-        
-          cd ..
-          ls
-          cd /bar
-          ls
-          cd /dubbo
+
           ls
           pwd
 #         python3 runSZZ.py ./bar/dubbo dubbo java
