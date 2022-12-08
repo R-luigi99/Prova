@@ -21,7 +21,7 @@ jobs:
         token: ${{ secrets.TOKEN }}
         
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
        repository: apache/dubbo
        path: './bar/dubbo'
@@ -42,8 +42,8 @@ jobs:
       run: | 
             cd /home/runner/work/Prova/Prova/bar/dubbo
             ls 
- #          python3 runSZZ.py /home/runner/work/Prova/Prova/bar/dubbo dubbo java
-#           python3 commits_features.py https://github.com/apache/dubbo.git
+            python3 runSZZ.py /home/runner/work/Prova/Prova/bar/dubbo dubbo java
+            python3 commits_features.py https://github.com/apache/dubbo.git
  #         gzip -d dubbo-annotations.json.gz
  #          gzip -d dubbo-bugs.json.gz 
   #         python3 commit_selector.py
