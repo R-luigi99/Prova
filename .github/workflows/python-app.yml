@@ -35,17 +35,16 @@ jobs:
 
     - name: output
       run: | 
-              ls > ciaos.txt
- #           cd /home/runner/work/Prova/Prova
-  #          git clone https://github.com/apache/dubbo.git
-  #          cd /home/runner/work/Prova/Prova/nuova
-#            python3 runSZZ.py /home/runner/work/Prova/Prova/dubbo dubbo java
- #           python3 commits_features.py https://github.com/apache/dubbo.git
- #         gzip -d dubbo-annotations.json.gz
- #          gzip -d dubbo-bugs.json.gz 
-  #         python3 commit_selector.py
-   #       python3 CreateCsv.py
-  #        python3 CreateModel.py
+            cd /home/runner/work/Prova/Prova
+            git clone https://github.com/apache/dubbo.git
+            cd /home/runner/work/Prova/Prova/nuova
+            python3 runSZZ.py /home/runner/work/Prova/Prova/dubbo dubbo java
+            python3 commits_features.py https://github.com/apache/dubbo.git
+            gzip -d dubbo-annotations.json.gz
+            gzip -d dubbo-bugs.json.gz 
+            python3 commit_selector.py
+            python3 CreateCsv.py
+            python3 CreateModel.py
     
         
         
