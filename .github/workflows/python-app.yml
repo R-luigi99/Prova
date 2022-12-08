@@ -50,7 +50,7 @@ jobs:
         
     - name: Commit report
       run: |
-          git add ciaos.txt
+          git add *
           git commit -m "prova"
           git push 
    
