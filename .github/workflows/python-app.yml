@@ -40,8 +40,8 @@ jobs:
 
     - name: output
       run: | 
-            cd /home/runner/work/Prova/Prova/bar/dubbo
-            ls 
+            cd /home/runner/work/Prova/Prova/nuova
+            ls
             python3 runSZZ.py /home/runner/work/Prova/Prova/bar/dubbo dubbo java
             python3 commits_features.py https://github.com/apache/dubbo.git
  #         gzip -d dubbo-annotations.json.gz
