@@ -20,11 +20,6 @@ jobs:
       with:
         token: ${{ secrets.TOKEN }}
         
-#    - name: Checkout
-#      uses: actions/checkout@v3
-#       with:
-#       repository: apache/dubbo
-#       path: './bar/dubbo'
       
       
     - name: Set up Python 3.10
@@ -40,11 +35,12 @@ jobs:
 
     - name: output
       run: | 
-            cd /home/runner/work/Prova/Prova
-            git clone https://github.com/apache/dubbo.git
-            cd /home/runner/work/Prova/Prova/nuova
-            python3 runSZZ.py /home/runner/work/Prova/Prova/dubbo dubbo java
-            python3 commits_features.py https://github.com/apache/dubbo.git
+              ls > ciaos.txt
+ #           cd /home/runner/work/Prova/Prova
+  #          git clone https://github.com/apache/dubbo.git
+  #          cd /home/runner/work/Prova/Prova/nuova
+#            python3 runSZZ.py /home/runner/work/Prova/Prova/dubbo dubbo java
+ #           python3 commits_features.py https://github.com/apache/dubbo.git
  #         gzip -d dubbo-annotations.json.gz
  #          gzip -d dubbo-bugs.json.gz 
   #         python3 commit_selector.py
@@ -55,9 +51,7 @@ jobs:
         
     - name: Commit report
       run: |
-          git config --global user.email "you@example.com"
-          git config --global user.name "Your Name"
-          git add .
+          git add ciaos.txt
           git commit -m "prova"
           git push 
    
