@@ -40,13 +40,15 @@ jobs:
 
     - name: output
       run: | 
-          python3 runSZZ.py /home/runner/work/Prova/Prova/bar/dubbo dubbo java
-          python3 commits_features.py https://github.com/apache/dubbo.git
-          gzip -d dubbo-annotations.json.gz
-          gzip -d dubbo-bugs.json.gz 
-          python3 commit_selector.py
-          python3 CreateCsv.py
-          python3 CreateModel.py
+            cd /home/runner/work/Prova/Prova/bar/dubbo
+            ls
+ #         python3 runSZZ.py /home/runner/work/Prova/Prova/bar/dubbo dubbo java
+  #        python3 commits_features.py https://github.com/apache/dubbo.git
+    #      gzip -d dubbo-annotations.json.gz
+    #      gzip -d dubbo-bugs.json.gz 
+  #        python3 commit_selector.py
+   #       python3 CreateCsv.py
+  #        python3 CreateModel.py
     
         
         
